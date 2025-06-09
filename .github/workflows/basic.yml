@@ -14,3 +14,9 @@ jobs:
 
       - name: Hello 출력
         run: echo "Hello, Github Actions!"
+
+      - name: multiple commands
+        run: |
+          echo "Good"
+          echo "Morning"
+          echo "!"
