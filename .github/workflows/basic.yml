@@ -1,0 +1,16 @@
+name: Hello GitHub Actions
+
+on:
+  push: 
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 소스코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: Hello 출력
+        run: echo "Hello, Github Actions!"
